@@ -6,7 +6,7 @@ const app = express();
 
 
 // TODO 1: Define server port
-cost PORT = 3000;
+const PORT = 3000;
 
 
 // TODO 4: Import and Apply CORS middleware
@@ -30,7 +30,7 @@ app.get("/api/quote", (req, res) => {
 });
 
 
-
-
-
 // TODO 7: Start server using app.listen
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
